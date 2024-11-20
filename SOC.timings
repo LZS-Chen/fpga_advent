@@ -1,0 +1,102 @@
+
+icetime topological timing analysis report
+==========================================
+
+Report for critical path:
+-------------------------
+
+        ram_3_3 (SB_RAM40_4K) [clk] -> RDATA[0]: 2.246 ns
+     2.246 ns net_4524 (instr[5])
+        odrv_3_3_4524_2391 (Odrv4) I -> O: 0.372 ns
+        t1136 (Span4Mux_v3) I -> O: 0.337 ns
+        t1135 (LocalMux) I -> O: 0.330 ns
+        inmux_4_6_8835_8879 (InMux) I -> O: 0.260 ns
+        lc40_4_6_5 (LogicCell40) in1 -> lcout: 0.400 ns
+     3.943 ns net_6871 (leds_SB_DFFE_Q_4_D_SB_LUT4_O_I2_SB_LUT4_O_I2[2])
+        odrv_4_6_6871_8140 (Odrv12) I -> O: 0.540 ns
+        t2013 (LocalMux) I -> O: 0.330 ns
+        inmux_4_10_9333_9377 (InMux) I -> O: 0.260 ns
+        lc40_4_10_6 (LogicCell40) in1 -> lcout: 0.400 ns
+     5.472 ns net_7280 (RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_1_I2[2])
+        odrv_4_10_7280_5526 (Odrv4) I -> O: 0.372 ns
+        t2208 (Span4Mux_v4) I -> O: 0.372 ns
+        t2207 (Span4Mux_h0) I -> O: 0.147 ns
+        t2206 (LocalMux) I -> O: 0.330 ns
+        inmux_6_6_13041_13077 (InMux) I -> O: 0.260 ns
+        lc40_6_6_2 (LogicCell40) in0 -> lcout: 0.449 ns
+     7.401 ns net_10884 (RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I2[1])
+        odrv_6_6_10884_10791 (Odrv4) I -> O: 0.372 ns
+        t2766 (Span4Mux_h2) I -> O: 0.203 ns
+        t2765 (LocalMux) I -> O: 0.330 ns
+        inmux_4_3_8471_8524 (InMux) I -> O: 0.260 ns
+        lc40_4_3_7 (LogicCell40) in3 -> lcout: 0.316 ns
+     8.881 ns net_6567 (RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I3[1])
+        odrv_4_3_6567_6709 (Odrv4) I -> O: 0.372 ns
+        t1950 (Span4Mux_h0) I -> O: 0.147 ns
+        t1949 (LocalMux) I -> O: 0.330 ns
+        inmux_7_3_14783_14841 (InMux) I -> O: 0.260 ns
+        lc40_7_3_6 (LogicCell40) in0 -> lcout: 0.449 ns
+    10.438 ns net_12628 (RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O[3])
+        odrv_7_3_12628_14759 (Odrv4) I -> O: 0.372 ns
+        t2977 (Span4Mux_v4) I -> O: 0.372 ns
+        t2976 (LocalMux) I -> O: 0.330 ns
+        inmux_8_9_17632_17697 (InMux) I -> O: 0.260 ns
+        lc40_8_9_7 (LogicCell40) in3 -> lcout: 0.316 ns
+    12.086 ns net_15476 (RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_1_I2[1])
+        odrv_8_9_15476_15372 (Odrv4) I -> O: 0.372 ns
+        t3409 (Span4Mux_v2) I -> O: 0.252 ns
+        t3408 (LocalMux) I -> O: 0.330 ns
+        inmux_7_4_14909_14948 (InMux) I -> O: 0.260 ns
+        t394 (CascadeMux) I -> O: 0.000 ns
+        lc40_7_4_3 (LogicCell40) in2 -> lcout: 0.379 ns
+    13.678 ns net_12748 (RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O[3])
+        t2996 (LocalMux) I -> O: 0.330 ns
+        inmux_8_4_17015_17082 (InMux) I -> O: 0.260 ns
+        lc40_8_4_7 (LogicCell40) in3 -> lcout: 0.316 ns
+    14.583 ns net_14861 (leds_SB_DFFE_Q_1_D_SB_LUT4_O_I1[2])
+        odrv_8_4_14861_14757 (Odrv4) I -> O: 0.372 ns
+        t3296 (Span4Mux_v1) I -> O: 0.203 ns
+        t3295 (LocalMux) I -> O: 0.330 ns
+        inmux_7_1_14505_14561 (InMux) I -> O: 0.260 ns
+        lc40_7_1_7 (LogicCell40) in0 -> lcout: 0.449 ns
+    16.196 ns net_12342 (leds_SB_DFFE_Q_1_D)
+        odrv_7_1_12342_14621 (Odrv4) I -> O: 0.372 ns
+        t2923 (Span4Mux_h4) I -> O: 0.316 ns
+        t2922 (Span4Mux_v3) I -> O: 0.337 ns
+        t2921 (LocalMux) I -> O: 0.330 ns
+        inmux_3_6_6962_7000 (InMux) I -> O: 0.260 ns
+    17.809 ns net_7000 (leds_SB_DFFE_Q_1_D)
+        ram_3_5 (SB_RAM40_4K) WDATA[12] [setup]: 0.161 ns
+    17.970 ns net_4894 (rs2[9])
+
+Resolvable net names on path:
+     2.246 ns ..  3.544 ns instr[5]
+     3.943 ns ..  5.073 ns leds_SB_DFFE_Q_4_D_SB_LUT4_O_I2_SB_LUT4_O_I2[2]
+     5.472 ns ..  6.952 ns RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_1_I2[2]
+     7.401 ns ..  8.565 ns RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I2[1]
+     8.881 ns ..  9.989 ns RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I3[1]
+    10.438 ns .. 11.770 ns RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O[3]
+    12.086 ns .. 13.299 ns RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_1_I2[1]
+    13.678 ns .. 14.267 ns RegisterBank.0.0_WDATA_2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O[3]
+    14.583 ns .. 15.747 ns leds_SB_DFFE_Q_1_D_SB_LUT4_O_I1[2]
+    16.196 ns .. 17.809 ns leds_SB_DFFE_Q_1_D
+               RDATA[0] -> rs2[0]
+              RDATA[10] -> rs2[5]
+              RDATA[11] -> rs2[13]
+              RDATA[12] -> rs2[3]
+              RDATA[13] -> rs2[11]
+              RDATA[14] -> rs2[7]
+              RDATA[15] -> rs2[15]
+               RDATA[1] -> rs2[8]
+               RDATA[2] -> rs2[4]
+               RDATA[3] -> rs2[12]
+               RDATA[4] -> rs2[2]
+               RDATA[5] -> rs2[10]
+               RDATA[6] -> rs2[6]
+               RDATA[7] -> rs2[14]
+               RDATA[8] -> rs2[1]
+               RDATA[9] -> rs2[9]
+
+Total number of logic levels: 10
+Total path delay: 17.97 ns (55.65 MHz)
+

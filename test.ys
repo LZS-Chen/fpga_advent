@@ -1,0 +1,4 @@
+read_verilog clockworks.v   # 读取 Verilog 代码
+hierarchy -check -top Clockworks  # 指定顶层模块
+proc; opt; fsm; opt;            # 进行优化、FSM 提取等
+show -format dot -prefix SOC 
