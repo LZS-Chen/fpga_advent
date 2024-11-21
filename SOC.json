@@ -21,7 +21,7 @@
         }
       },
       "cells": {
-        "$specify$1030": {
+        "$specify$1141": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -350,7 +350,7 @@
         }
       },
       "cells": {
-        "$specify$1030": {
+        "$specify$1141": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -420,7 +420,7 @@
         }
       },
       "cells": {
-        "$specify$1030": {
+        "$specify$1141": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3065,9 +3065,8 @@
     },
     "SB_DFFESR": {
       "attributes": {
-        "blackbox": "00000000000000000000000000000001",
         "abc9_flop": "00000000000000000000000000000001",
-        "cells_not_processed": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
         "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:592.1-650.10"
       },
       "ports": {
@@ -3136,9 +3135,8 @@
     },
     "SB_DFFESS": {
       "attributes": {
-        "blackbox": "00000000000000000000000000000001",
         "abc9_flop": "00000000000000000000000000000001",
-        "cells_not_processed": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
         "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:733.1-791.10"
       },
       "ports": {
@@ -3948,8 +3946,9 @@
     },
     "SB_DFFSR": {
       "attributes": {
-        "abc9_flop": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:350.1-397.10"
       },
       "ports": {
@@ -4006,8 +4005,9 @@
     },
     "SB_DFFSS": {
       "attributes": {
-        "abc9_flop": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:471.1-518.10"
       },
       "ports": {
@@ -10199,7 +10199,7 @@
       "attributes": {
         "hdlname": "SOC",
         "top": "00000000000000000000000000000001",
-        "src": "advent/day3.v:10.1-57.10"
+        "src": "advent/day4.v:13.1-67.10"
       },
       "ports": {
         "CLK": {
@@ -11159,6 +11159,27 @@
             "O": [ 56 ]
           }
         },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_21_D_SB_LUT4_O_I3_SB_CARRY_CO": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 57 ],
+            "CO": [ 54 ],
+            "I0": [ "0" ],
+            "I1": [ 58 ]
+          }
+        },
         "CW.genblk1.slow_CLK_SB_DFF_Q_22": {
           "hide_name": 0,
           "type": "SB_DFF",
@@ -11175,11 +11196,56 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 57 ],
-            "Q": [ 54 ]
+            "D": [ 59 ],
+            "Q": [ 58 ]
           }
         },
         "CW.genblk1.slow_CLK_SB_DFF_Q_22_D_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 58 ],
+            "I3": [ 57 ],
+            "O": [ 59 ]
+          }
+        },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_23": {
+          "hide_name": 0,
+          "type": "SB_DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "clockworks.v:62.3-64.6|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:2.51-2.90"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 60 ],
+            "Q": [ 57 ]
+          }
+        },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_23_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11200,8 +11266,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 54 ],
-            "O": [ 57 ]
+            "I3": [ 57 ],
+            "O": [ 60 ]
           }
         },
         "CW.genblk1.slow_CLK_SB_DFF_Q_2_D_SB_LUT4_O": {
@@ -11244,79 +11310,13 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 58 ],
-            "CO": [ 50 ],
-            "I0": [ "0" ],
-            "I1": [ 59 ]
-          }
-        },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_3": {
-          "hide_name": 0,
-          "type": "SB_DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "clockworks.v:62.3-64.6|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:2.51-2.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 2 ],
-            "D": [ 60 ],
-            "Q": [ 59 ]
-          }
-        },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_3_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 59 ],
-            "I3": [ 58 ],
-            "O": [ 60 ]
-          }
-        },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_3_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
             "CI": [ 61 ],
-            "CO": [ 58 ],
+            "CO": [ 50 ],
             "I0": [ "0" ],
             "I1": [ 62 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_4": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_3": {
           "hide_name": 0,
           "type": "SB_DFF",
           "parameters": {
@@ -11336,7 +11336,7 @@
             "Q": [ 62 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_4_D_SB_LUT4_O": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_3_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11361,7 +11361,7 @@
             "O": [ 63 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_4_D_SB_LUT4_O_I3_SB_CARRY_CO": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_3_D_SB_LUT4_O_I3_SB_CARRY_CO": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11382,7 +11382,7 @@
             "I1": [ 65 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_5": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_4": {
           "hide_name": 0,
           "type": "SB_DFF",
           "parameters": {
@@ -11402,7 +11402,7 @@
             "Q": [ 65 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_5_D_SB_LUT4_O": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_4_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11427,7 +11427,7 @@
             "O": [ 66 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_5_D_SB_LUT4_O_I3_SB_CARRY_CO": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_4_D_SB_LUT4_O_I3_SB_CARRY_CO": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11448,7 +11448,7 @@
             "I1": [ 68 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_6": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_5": {
           "hide_name": 0,
           "type": "SB_DFF",
           "parameters": {
@@ -11468,7 +11468,7 @@
             "Q": [ 68 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_6_D_SB_LUT4_O": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_5_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11493,7 +11493,7 @@
             "O": [ 69 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_6_D_SB_LUT4_O_I3_SB_CARRY_CO": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_5_D_SB_LUT4_O_I3_SB_CARRY_CO": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11514,7 +11514,7 @@
             "I1": [ 71 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_7": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_6": {
           "hide_name": 0,
           "type": "SB_DFF",
           "parameters": {
@@ -11534,7 +11534,7 @@
             "Q": [ 71 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_7_D_SB_LUT4_O": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_6_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11559,7 +11559,7 @@
             "O": [ 72 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_7_D_SB_LUT4_O_I3_SB_CARRY_CO": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_6_D_SB_LUT4_O_I3_SB_CARRY_CO": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11580,7 +11580,7 @@
             "I1": [ 74 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_8": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_7": {
           "hide_name": 0,
           "type": "SB_DFF",
           "parameters": {
@@ -11600,7 +11600,7 @@
             "Q": [ 74 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_8_D_SB_LUT4_O": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_7_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11625,7 +11625,7 @@
             "O": [ 75 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_8_D_SB_LUT4_O_I3_SB_CARRY_CO": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_7_D_SB_LUT4_O_I3_SB_CARRY_CO": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -11646,7 +11646,7 @@
             "I1": [ 77 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_9": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_8": {
           "hide_name": 0,
           "type": "SB_DFF",
           "parameters": {
@@ -11666,7 +11666,7 @@
             "Q": [ 77 ]
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_9_D_SB_LUT4_O": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_8_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11691,6 +11691,72 @@
             "O": [ 78 ]
           }
         },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_8_D_SB_LUT4_O_I3_SB_CARRY_CO": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 79 ],
+            "CO": [ 76 ],
+            "I0": [ "0" ],
+            "I1": [ 80 ]
+          }
+        },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_9": {
+          "hide_name": 0,
+          "type": "SB_DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "clockworks.v:62.3-64.6|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:2.51-2.90"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 81 ],
+            "Q": [ 80 ]
+          }
+        },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_9_D_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 80 ],
+            "I3": [ 79 ],
+            "O": [ 81 ]
+          }
+        },
         "CW.genblk1.slow_CLK_SB_DFF_Q_9_D_SB_LUT4_O_I3_SB_CARRY_CO": {
           "hide_name": 0,
           "type": "SB_CARRY",
@@ -11707,7 +11773,7 @@
           },
           "connections": {
             "CI": [ 19 ],
-            "CO": [ 76 ],
+            "CO": [ 79 ],
             "I0": [ "0" ],
             "I1": [ 18 ]
           }
@@ -11758,59 +11824,15 @@
             "I1": [ 16 ]
           }
         },
-        "PC_SB_DFFSR_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day3.v:51.1-54.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 10 ],
-            "D": [ 79 ],
-            "Q": [ 80 ],
-            "R": [ 81 ]
-          }
-        },
-        "PC_SB_DFFSR_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFFSR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day3.v:51.1-54.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:19.59-19.105"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 10 ],
-            "D": [ 82 ],
-            "Q": [ 83 ],
-            "R": [ 81 ]
-          }
-        },
-        "PC_SB_DFFSR_Q_1_D_SB_LUT4_O": {
+        "LEDS_SB_LUT4_I3": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0110100110010110"
+            "LUT_INIT": "1100111111111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11821,171 +11843,235 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 83 ],
-            "I3": [ 84 ],
-            "O": [ 82 ]
+            "I1": [ 3 ],
+            "I2": [ 82 ],
+            "I3": [ 7 ],
+            "O": [ 83 ]
           }
         },
-        "PC_SB_DFFSR_Q_1_D_SB_LUT4_O_I3_SB_CARRY_CO": {
+        "LEDS_SB_LUT4_O": {
           "hide_name": 0,
-          "type": "SB_CARRY",
+          "type": "SB_LUT4",
           "parameters": {
+            "LUT_INIT": "0000000010010000"
           },
           "attributes": {
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
-            "CI": "input",
-            "CO": "output",
             "I0": "input",
-            "I1": "input"
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
           },
           "connections": {
-            "CI": [ 85 ],
-            "CO": [ 84 ],
-            "I0": [ "0" ],
-            "I1": [ 86 ]
+            "I0": [ 84 ],
+            "I1": [ 85 ],
+            "I2": [ 82 ],
+            "I3": [ 86 ],
+            "O": [ 5 ]
           }
         },
-        "PC_SB_DFFSR_Q_2": {
+        "LEDS_SB_LUT4_O_1": {
           "hide_name": 0,
-          "type": "SB_DFFSR",
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000010000100"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 84 ],
+            "I1": [ 85 ],
+            "I2": [ 82 ],
+            "I3": [ 86 ],
+            "O": [ 6 ]
+          }
+        },
+        "LEDS_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000010000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 84 ],
+            "I1": [ 85 ],
+            "I2": [ 82 ],
+            "I3": [ 86 ],
+            "O": [ 8 ]
+          }
+        },
+        "LEDS_SB_LUT4_O_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000011000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 84 ],
+            "I2": [ 85 ],
+            "I3": [ 86 ],
+            "O": [ 7 ]
+          }
+        },
+        "LEDS_SB_LUT4_O_4": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000011000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 85 ],
+            "I2": [ 82 ],
+            "I3": [ 86 ],
+            "O": [ 4 ]
+          }
+        },
+        "PC_SB_DFFESR_Q": {
+          "hide_name": 0,
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day3.v:51.1-54.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "advent/day4.v:55.1-64.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "R": "input"
           },
           "connections": {
             "C": [ 10 ],
             "D": [ 87 ],
+            "E": [ 83 ],
             "Q": [ 88 ],
-            "R": [ 81 ]
+            "R": [ 3 ]
           }
         },
-        "PC_SB_DFFSR_Q_2_D_SB_LUT4_O": {
+        "PC_SB_DFFESR_Q_1": {
           "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 88 ],
-            "I3": [ 89 ],
-            "O": [ 87 ]
-          }
-        },
-        "PC_SB_DFFSR_Q_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 80 ],
-            "I3": [ 90 ],
-            "O": [ 79 ]
-          }
-        },
-        "PC_SB_DFFSR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 84 ],
-            "CO": [ 90 ],
-            "I0": [ "0" ],
-            "I1": [ 83 ]
-          }
-        },
-        "PC_SB_DFFSS_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFSS",
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day3.v:51.1-54.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:20.59-20.105"
+            "src": "advent/day4.v:55.1-64.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
-            "S": "input"
+            "R": "input"
           },
           "connections": {
             "C": [ 10 ],
-            "D": [ 91 ],
-            "Q": [ 86 ],
-            "S": [ 81 ]
+            "D": [ 89 ],
+            "E": [ 83 ],
+            "Q": [ 90 ],
+            "R": [ 3 ]
           }
         },
-        "PC_SB_DFFSS_Q_1": {
+        "PC_SB_DFFESR_Q_1_D_SB_LUT4_O": {
           "hide_name": 0,
-          "type": "SB_DFFSS",
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "advent/day4.v:62.13-62.17|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 90 ],
+            "I3": [ 91 ],
+            "O": [ 89 ]
+          }
+        },
+        "PC_SB_DFFESR_Q_2": {
+          "hide_name": 0,
+          "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day3.v:51.1-54.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:20.59-20.105"
+            "src": "advent/day4.v:55.1-64.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
-            "S": "input"
+            "R": "input"
           },
           "connections": {
             "C": [ 10 ],
             "D": [ 92 ],
-            "Q": [ 89 ],
-            "S": [ 81 ]
+            "E": [ 83 ],
+            "Q": [ 91 ],
+            "R": [ 3 ]
           }
         },
-        "PC_SB_DFFSS_Q_1_D_SB_LUT4_O": {
+        "PC_SB_DFFESR_Q_2_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -12006,11 +12092,11 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 89 ],
+            "I3": [ 91 ],
             "O": [ 92 ]
           }
         },
-        "PC_SB_DFFSS_Q_D_SB_LUT4_O": {
+        "PC_SB_DFFESR_Q_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -12018,7 +12104,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "advent/day4.v:62.13-62.17|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12030,18 +12116,18 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 86 ],
-            "I3": [ 85 ],
-            "O": [ 91 ]
+            "I2": [ 88 ],
+            "I3": [ 93 ],
+            "O": [ 87 ]
           }
         },
-        "PC_SB_DFFSS_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
+        "PC_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
           },
           "attributes": {
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "advent/day4.v:62.13-62.17|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12050,42 +12136,65 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 89 ],
-            "CO": [ 85 ],
+            "CI": [ 91 ],
+            "CO": [ 93 ],
             "I0": [ "0" ],
-            "I1": [ 88 ]
+            "I1": [ 90 ]
           }
         },
-        "RESET_SB_LUT4_I0": {
+        "instr_SB_DFFESR_Q": {
           "hide_name": 0,
-          "type": "SB_LUT4",
+          "type": "SB_DFFESR",
           "parameters": {
-            "LUT_INIT": "1011101010101010"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
           },
           "connections": {
-            "I0": [ 3 ],
-            "I1": [ 80 ],
-            "I2": [ 83 ],
-            "I3": [ 93 ],
-            "O": [ 81 ]
+            "C": [ 10 ],
+            "D": [ 94 ],
+            "E": [ 83 ],
+            "Q": [ 84 ],
+            "R": [ 3 ]
           }
         },
-        "RESET_SB_LUT4_I0_I3_SB_LUT4_O": {
+        "instr_SB_DFFESR_Q_1": {
+          "hide_name": 0,
+          "type": "SB_DFFESR",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 10 ],
+            "D": [ 95 ],
+            "E": [ 83 ],
+            "Q": [ 86 ],
+            "R": [ 3 ]
+          }
+        },
+        "instr_SB_DFFESR_Q_1_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1100000000000000"
+            "LUT_INIT": "0000110000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -12100,39 +12209,115 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 86 ],
-            "I2": [ 88 ],
-            "I3": [ 89 ],
-            "O": [ 93 ]
+            "I1": [ 88 ],
+            "I2": [ 90 ],
+            "I3": [ 91 ],
+            "O": [ 95 ]
           }
         },
-        "leds_SB_DFFSS_Q": {
+        "instr_SB_DFFESR_Q_D_SB_LUT4_O": {
           "hide_name": 0,
-          "type": "SB_DFFSS",
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111110011000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 88 ],
+            "I2": [ 90 ],
+            "I3": [ 91 ],
+            "O": [ 94 ]
+          }
+        },
+        "instr_SB_DFFESS_Q": {
+          "hide_name": 0,
+          "type": "SB_DFFESS",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:20.59-20.105"
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:25.66-25.119"
           },
           "port_directions": {
             "C": "input",
             "D": "input",
+            "E": "input",
             "Q": "output",
             "S": "input"
           },
           "connections": {
             "C": [ 10 ],
-            "D": [ 94 ],
-            "Q": [ 8 ],
-            "S": [ 83 ]
+            "D": [ 96 ],
+            "E": [ 83 ],
+            "Q": [ 85 ],
+            "S": [ 3 ]
           }
         },
-        "leds_SB_DFFSS_Q_D_SB_LUT4_O": {
+        "instr_SB_DFFESS_Q_1": {
+          "hide_name": 0,
+          "type": "SB_DFFESS",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:25.66-25.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "S": "input"
+          },
+          "connections": {
+            "C": [ 10 ],
+            "D": [ 97 ],
+            "E": [ 83 ],
+            "Q": [ 82 ],
+            "S": [ 3 ]
+          }
+        },
+        "instr_SB_DFFESS_Q_1_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1100110011000000"
+            "LUT_INIT": "1111000000001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 88 ],
+            "I3": [ 90 ],
+            "O": [ 97 ]
+          }
+        },
+        "instr_SB_DFFESS_Q_D_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111110011110011"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -12147,190 +12332,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 86 ],
-            "I2": [ 88 ],
-            "I3": [ 89 ],
-            "O": [ 94 ]
-          }
-        },
-        "leds_SB_DFF_Q": {
-          "hide_name": 0,
-          "type": "SB_DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:2.51-2.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 10 ],
-            "D": [ 95 ],
-            "Q": [ 7 ]
-          }
-        },
-        "leds_SB_DFF_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:2.51-2.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 10 ],
-            "D": [ 96 ],
-            "Q": [ 6 ]
-          }
-        },
-        "leds_SB_DFF_Q_1_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1001100010001010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 83 ],
-            "I1": [ 86 ],
-            "I2": [ 88 ],
-            "I3": [ 89 ],
+            "I1": [ 88 ],
+            "I2": [ 90 ],
+            "I3": [ 91 ],
             "O": [ 96 ]
-          }
-        },
-        "leds_SB_DFF_Q_2": {
-          "hide_name": 0,
-          "type": "SB_DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:2.51-2.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 10 ],
-            "D": [ 97 ],
-            "Q": [ 5 ]
-          }
-        },
-        "leds_SB_DFF_Q_2_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1110000010010000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 83 ],
-            "I1": [ 86 ],
-            "I2": [ 88 ],
-            "I3": [ 89 ],
-            "O": [ 97 ]
-          }
-        },
-        "leds_SB_DFF_Q_3": {
-          "hide_name": 0,
-          "type": "SB_DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:2.51-2.90"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 10 ],
-            "D": [ 98 ],
-            "Q": [ 4 ]
-          }
-        },
-        "leds_SB_DFF_Q_3_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000100101100000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 83 ],
-            "I1": [ 86 ],
-            "I2": [ 88 ],
-            "I3": [ 89 ],
-            "O": [ 98 ]
-          }
-        },
-        "leds_SB_DFF_Q_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1010101010101100"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 83 ],
-            "I1": [ 86 ],
-            "I2": [ 88 ],
-            "I3": [ 89 ],
-            "O": [ 95 ]
           }
         }
       },
@@ -12339,7 +12344,7 @@
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "advent/day3.v:11.11-11.14"
+            "src": "advent/day4.v:14.11-14.14"
           }
         },
         "CW.CLK": {
@@ -12382,7 +12387,7 @@
         },
         "CW.genblk1.slow_CLK": {
           "hide_name": 0,
-          "bits": [ 54, 55, 48, 45, 42, 39, 36, 33, 30, 27, 24, 21, 18, 77, 74, 71, 68, 65, 62, 59, 51, 16, 13, 10 ],
+          "bits": [ 57, 58, 55, 48, 45, 42, 39, 36, 33, 30, 27, 24, 21, 18, 80, 77, 74, 71, 68, 65, 62, 51, 16, 13, 10 ],
           "attributes": {
             "hdlname": "CW genblk1.slow_CLK",
             "src": "clockworks.v:61.20-61.28"
@@ -12562,9 +12567,23 @@
           "attributes": {
           }
         },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_21_D_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 54 ],
+          "attributes": {
+            "abc9_carry": "00000000000000000000000000000001",
+            "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
+          }
+        },
         "CW.genblk1.slow_CLK_SB_DFF_Q_22_D": {
           "hide_name": 0,
-          "bits": [ 57 ],
+          "bits": [ 59 ],
+          "attributes": {
+          }
+        },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_23_D": {
+          "hide_name": 0,
+          "bits": [ 60 ],
           "attributes": {
           }
         },
@@ -12584,25 +12603,11 @@
         },
         "CW.genblk1.slow_CLK_SB_DFF_Q_3_D": {
           "hide_name": 0,
-          "bits": [ 60 ],
-          "attributes": {
-          }
-        },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_3_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 58 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_4_D": {
-          "hide_name": 0,
           "bits": [ 63 ],
           "attributes": {
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_4_D_SB_LUT4_O_I3": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_3_D_SB_LUT4_O_I3": {
           "hide_name": 0,
           "bits": [ 61 ],
           "attributes": {
@@ -12610,13 +12615,13 @@
             "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_5_D": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_4_D": {
           "hide_name": 0,
           "bits": [ 66 ],
           "attributes": {
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_5_D_SB_LUT4_O_I3": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_4_D_SB_LUT4_O_I3": {
           "hide_name": 0,
           "bits": [ 64 ],
           "attributes": {
@@ -12624,13 +12629,13 @@
             "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_6_D": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_5_D": {
           "hide_name": 0,
           "bits": [ 69 ],
           "attributes": {
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_6_D_SB_LUT4_O_I3": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_5_D_SB_LUT4_O_I3": {
           "hide_name": 0,
           "bits": [ 67 ],
           "attributes": {
@@ -12638,13 +12643,13 @@
             "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_7_D": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_6_D": {
           "hide_name": 0,
           "bits": [ 72 ],
           "attributes": {
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_7_D_SB_LUT4_O_I3": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_6_D_SB_LUT4_O_I3": {
           "hide_name": 0,
           "bits": [ 70 ],
           "attributes": {
@@ -12652,13 +12657,13 @@
             "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_8_D": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_7_D": {
           "hide_name": 0,
           "bits": [ 75 ],
           "attributes": {
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_8_D_SB_LUT4_O_I3": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_7_D_SB_LUT4_O_I3": {
           "hide_name": 0,
           "bits": [ 73 ],
           "attributes": {
@@ -12666,15 +12671,29 @@
             "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_9_D": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_8_D": {
           "hide_name": 0,
           "bits": [ 78 ],
           "attributes": {
           }
         },
-        "CW.genblk1.slow_CLK_SB_DFF_Q_9_D_SB_LUT4_O_I3": {
+        "CW.genblk1.slow_CLK_SB_DFF_Q_8_D_SB_LUT4_O_I3": {
           "hide_name": 0,
           "bits": [ 76 ],
+          "attributes": {
+            "abc9_carry": "00000000000000000000000000000001",
+            "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
+          }
+        },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_9_D": {
+          "hide_name": 0,
+          "bits": [ 81 ],
+          "attributes": {
+          }
+        },
+        "CW.genblk1.slow_CLK_SB_DFF_Q_9_D_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 79 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
             "src": "clockworks.v:63.18-63.30|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
@@ -12698,132 +12717,90 @@
           "hide_name": 0,
           "bits": [ 4, 5, 6, 7, 8 ],
           "attributes": {
-            "src": "advent/day3.v:13.17-13.21"
+            "src": "advent/day4.v:16.17-16.21"
           }
         },
         "PC": {
           "hide_name": 0,
-          "bits": [ 89, 88, 86, 83, 80 ],
+          "bits": [ 91, 90, 88, 98, 99, 100 ],
           "attributes": {
-            "src": "advent/day3.v:26.11-26.13"
+            "src": "advent/day4.v:54.10-54.12",
+            "unused_bits": "3 4 5"
           }
         },
-        "PC_SB_DFFSR_Q_1_D": {
+        "PC_SB_DFFESR_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 82 ],
+          "bits": [ 89 ],
           "attributes": {
           }
         },
-        "PC_SB_DFFSR_Q_1_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 84 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "PC_SB_DFFSR_Q_2_D": {
-          "hide_name": 0,
-          "bits": [ 87 ],
-          "attributes": {
-          }
-        },
-        "PC_SB_DFFSR_Q_D": {
-          "hide_name": 0,
-          "bits": [ 79 ],
-          "attributes": {
-          }
-        },
-        "PC_SB_DFFSR_Q_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ 90 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
-          }
-        },
-        "PC_SB_DFFSS_Q_1_D": {
+        "PC_SB_DFFESR_Q_2_D": {
           "hide_name": 0,
           "bits": [ 92 ],
           "attributes": {
           }
         },
-        "PC_SB_DFFSS_Q_D": {
+        "PC_SB_DFFESR_Q_D": {
           "hide_name": 0,
-          "bits": [ 91 ],
+          "bits": [ 87 ],
           "attributes": {
           }
         },
-        "PC_SB_DFFSS_Q_D_SB_LUT4_O_I3": {
+        "PC_SB_DFFESR_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ 85 ],
+          "bits": [ 93 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
-            "src": "advent/day3.v:52.31-52.35|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
+            "src": "advent/day4.v:62.13-62.17|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
+          }
+        },
+        "PC_SB_DFFESR_Q_E": {
+          "hide_name": 0,
+          "bits": [ 83 ],
+          "attributes": {
           }
         },
         "RESET": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "advent/day3.v:12.11-12.16"
-          }
-        },
-        "RESET_SB_LUT4_I0_I3": {
-          "hide_name": 0,
-          "bits": [ 3, 80, 83, 93 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "RESET_SB_LUT4_I0_O": {
-          "hide_name": 0,
-          "bits": [ 81 ],
-          "attributes": {
+            "src": "advent/day4.v:15.11-15.16"
           }
         },
         "clk": {
           "hide_name": 0,
           "bits": [ 10 ],
           "attributes": {
-            "src": "advent/day3.v:16.6-16.9"
+            "src": "advent/day4.v:19.6-19.9"
           }
         },
-        "leds": {
+        "instr": {
           "hide_name": 0,
-          "bits": [ 4, 5, 6, 7, 8 ],
+          "bits": [ "1", "1", 86, 86, 82, 85, 84 ],
           "attributes": {
-            "src": "advent/day3.v:49.11-49.15"
           }
         },
-        "leds_SB_DFFSS_Q_D": {
+        "instr_SB_DFFESR_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 95 ],
+          "attributes": {
+          }
+        },
+        "instr_SB_DFFESR_Q_D": {
           "hide_name": 0,
           "bits": [ 94 ],
           "attributes": {
           }
         },
-        "leds_SB_DFF_Q_1_D": {
-          "hide_name": 0,
-          "bits": [ 96 ],
-          "attributes": {
-          }
-        },
-        "leds_SB_DFF_Q_2_D": {
+        "instr_SB_DFFESS_Q_1_D": {
           "hide_name": 0,
           "bits": [ 97 ],
           "attributes": {
           }
         },
-        "leds_SB_DFF_Q_3_D": {
+        "instr_SB_DFFESS_Q_D": {
           "hide_name": 0,
-          "bits": [ 98 ],
-          "attributes": {
-          }
-        },
-        "leds_SB_DFF_Q_D": {
-          "hide_name": 0,
-          "bits": [ 95 ],
+          "bits": [ 96 ],
           "attributes": {
           }
         }
