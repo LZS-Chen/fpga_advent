@@ -21,7 +21,7 @@
         }
       },
       "cells": {
-        "$specify$1141": {
+        "$specify$1232": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -350,7 +350,7 @@
         }
       },
       "cells": {
-        "$specify$1141": {
+        "$specify$1232": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -420,7 +420,7 @@
         }
       },
       "cells": {
-        "$specify$1141": {
+        "$specify$1232": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -10199,7 +10199,7 @@
       "attributes": {
         "hdlname": "SOC",
         "top": "00000000000000000000000000000001",
-        "src": "advent/day4.v:13.1-67.10"
+        "src": "advent/day5.v:18.1-115.10"
       },
       "ports": {
         "CLK": {
@@ -11824,11 +11824,11 @@
             "I1": [ 16 ]
           }
         },
-        "LEDS_SB_LUT4_I3": {
+        "LEDS_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1100111111111111"
+            "LUT_INIT": "1111111100000011"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -11843,194 +11843,21 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 3 ],
-            "I2": [ 82 ],
-            "I3": [ 7 ],
-            "O": [ 83 ]
-          }
-        },
-        "LEDS_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000010010000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 84 ],
-            "I1": [ 85 ],
-            "I2": [ 82 ],
-            "I3": [ 86 ],
-            "O": [ 5 ]
+            "I1": [ 82 ],
+            "I2": [ 83 ],
+            "I3": [ 8 ],
+            "O": [ 4 ]
           }
         },
         "LEDS_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000000010000100"
+            "LUT_INIT": "1111111111110000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 84 ],
-            "I1": [ 85 ],
-            "I2": [ 82 ],
-            "I3": [ 86 ],
-            "O": [ 6 ]
-          }
-        },
-        "LEDS_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000010000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 84 ],
-            "I1": [ 85 ],
-            "I2": [ 82 ],
-            "I3": [ 86 ],
-            "O": [ 8 ]
-          }
-        },
-        "LEDS_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 84 ],
-            "I2": [ 85 ],
-            "I3": [ 86 ],
-            "O": [ 7 ]
-          }
-        },
-        "LEDS_SB_LUT4_O_4": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 85 ],
-            "I2": [ 82 ],
-            "I3": [ 86 ],
-            "O": [ 4 ]
-          }
-        },
-        "PC_SB_DFFESR_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day4.v:55.1-64.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 10 ],
-            "D": [ 87 ],
-            "E": [ 83 ],
-            "Q": [ 88 ],
-            "R": [ 3 ]
-          }
-        },
-        "PC_SB_DFFESR_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day4.v:55.1-64.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 10 ],
-            "D": [ 89 ],
-            "E": [ 83 ],
-            "Q": [ 90 ],
-            "R": [ 3 ]
-          }
-        },
-        "PC_SB_DFFESR_Q_1_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day4.v:62.13-62.17|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:17.34-18.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12042,19 +11869,94 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 90 ],
-            "I3": [ 91 ],
-            "O": [ 89 ]
+            "I2": [ 84 ],
+            "I3": [ 8 ],
+            "O": [ 5 ]
           }
         },
-        "PC_SB_DFFESR_Q_2": {
+        "LEDS_SB_LUT4_O_1_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 82 ],
+            "I3": [ 83 ],
+            "O": [ 84 ]
+          }
+        },
+        "LEDS_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111111100001100"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 82 ],
+            "I2": [ 83 ],
+            "I3": [ 8 ],
+            "O": [ 6 ]
+          }
+        },
+        "LEDS_SB_LUT4_O_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111111111000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 82 ],
+            "I2": [ 83 ],
+            "I3": [ 8 ],
+            "O": [ 7 ]
+          }
+        },
+        "PC_SB_DFFESR_Q": {
           "hide_name": 0,
           "type": "SB_DFFESR",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day4.v:55.1-64.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "advent/day5.v:78.1-112.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -12065,9 +11967,82 @@
           },
           "connections": {
             "C": [ 10 ],
-            "D": [ 92 ],
-            "E": [ 83 ],
-            "Q": [ 91 ],
+            "D": [ 85 ],
+            "E": [ 86 ],
+            "Q": [ 87 ],
+            "R": [ 3 ]
+          }
+        },
+        "PC_SB_DFFESR_Q_1": {
+          "hide_name": 0,
+          "type": "SB_DFFESR",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "advent/day5.v:78.1-112.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 10 ],
+            "D": [ 88 ],
+            "E": [ 86 ],
+            "Q": [ 89 ],
+            "R": [ 3 ]
+          }
+        },
+        "PC_SB_DFFESR_Q_1_D_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "advent/day5.v:100.25-100.29|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 89 ],
+            "I3": [ 90 ],
+            "O": [ 88 ]
+          }
+        },
+        "PC_SB_DFFESR_Q_2": {
+          "hide_name": 0,
+          "type": "SB_DFFESR",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "advent/day5.v:78.1-112.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 10 ],
+            "D": [ 91 ],
+            "E": [ 86 ],
+            "Q": [ 90 ],
             "R": [ 3 ]
           }
         },
@@ -12092,8 +12067,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 91 ],
-            "O": [ 92 ]
+            "I3": [ 90 ],
+            "O": [ 91 ]
           }
         },
         "PC_SB_DFFESR_Q_D_SB_LUT4_O": {
@@ -12104,7 +12079,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "advent/day4.v:62.13-62.17|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "advent/day5.v:100.25-100.29|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -12116,9 +12091,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 88 ],
-            "I3": [ 93 ],
-            "O": [ 87 ]
+            "I2": [ 87 ],
+            "I3": [ 92 ],
+            "O": [ 85 ]
           }
         },
         "PC_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
@@ -12127,7 +12102,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "advent/day4.v:62.13-62.17|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "advent/day5.v:100.25-100.29|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -12136,10 +12111,35 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 91 ],
-            "CO": [ 93 ],
+            "CI": [ 90 ],
+            "CO": [ 92 ],
             "I0": [ "0" ],
-            "I1": [ 90 ]
+            "I1": [ 89 ]
+          }
+        },
+        "PC_SB_DFFESR_Q_E_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1010101010101110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 82 ],
+            "I2": [ 83 ],
+            "I3": [ 8 ],
+            "O": [ 86 ]
           }
         },
         "instr_SB_DFFESR_Q": {
@@ -12160,9 +12160,9 @@
           },
           "connections": {
             "C": [ 10 ],
-            "D": [ 94 ],
-            "E": [ 83 ],
-            "Q": [ 84 ],
+            "D": [ 93 ],
+            "E": [ 94 ],
+            "Q": [ 95 ],
             "R": [ 3 ]
           }
         },
@@ -12184,9 +12184,9 @@
           },
           "connections": {
             "C": [ 10 ],
-            "D": [ 95 ],
-            "E": [ 83 ],
-            "Q": [ 86 ],
+            "D": [ 96 ],
+            "E": [ 94 ],
+            "Q": [ 97 ],
             "R": [ 3 ]
           }
         },
@@ -12209,10 +12209,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 88 ],
-            "I2": [ 90 ],
-            "I3": [ 91 ],
-            "O": [ 95 ]
+            "I1": [ 87 ],
+            "I2": [ 89 ],
+            "I3": [ 90 ],
+            "O": [ 96 ]
           }
         },
         "instr_SB_DFFESR_Q_D_SB_LUT4_O": {
@@ -12234,10 +12234,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 88 ],
-            "I2": [ 90 ],
-            "I3": [ 91 ],
-            "O": [ 94 ]
+            "I1": [ 87 ],
+            "I2": [ 89 ],
+            "I3": [ 90 ],
+            "O": [ 93 ]
           }
         },
         "instr_SB_DFFESS_Q": {
@@ -12258,9 +12258,9 @@
           },
           "connections": {
             "C": [ 10 ],
-            "D": [ 96 ],
-            "E": [ 83 ],
-            "Q": [ 85 ],
+            "D": [ 98 ],
+            "E": [ 94 ],
+            "Q": [ 99 ],
             "S": [ 3 ]
           }
         },
@@ -12282,9 +12282,9 @@
           },
           "connections": {
             "C": [ 10 ],
-            "D": [ 97 ],
-            "E": [ 83 ],
-            "Q": [ 82 ],
+            "D": [ 100 ],
+            "E": [ 94 ],
+            "Q": [ 101 ],
             "S": [ 3 ]
           }
         },
@@ -12308,9 +12308,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 88 ],
-            "I3": [ 90 ],
-            "O": [ 97 ]
+            "I2": [ 87 ],
+            "I3": [ 89 ],
+            "O": [ 100 ]
           }
         },
         "instr_SB_DFFESS_Q_D_SB_LUT4_O": {
@@ -12332,10 +12332,158 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 88 ],
-            "I2": [ 90 ],
-            "I3": [ 91 ],
-            "O": [ 96 ]
+            "I1": [ 87 ],
+            "I2": [ 89 ],
+            "I3": [ 90 ],
+            "O": [ 98 ]
+          }
+        },
+        "instr_SB_DFFESS_Q_E_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1100110011001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 3 ],
+            "I2": [ 82 ],
+            "I3": [ 83 ],
+            "O": [ 94 ]
+          }
+        },
+        "isSys_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000010000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 95 ],
+            "I1": [ 99 ],
+            "I2": [ 101 ],
+            "I3": [ 97 ],
+            "O": [ 8 ]
+          }
+        },
+        "state_SB_DFFESR_Q": {
+          "hide_name": 0,
+          "type": "SB_DFFESR",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "advent/day5.v:78.1-112.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 10 ],
+            "D": [ 84 ],
+            "E": [ 102 ],
+            "Q": [ 82 ],
+            "R": [ 3 ]
+          }
+        },
+        "state_SB_DFFESR_Q_1": {
+          "hide_name": 0,
+          "type": "SB_DFFESR",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "advent/day5.v:78.1-112.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v:24.66-24.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 10 ],
+            "D": [ 103 ],
+            "E": [ 102 ],
+            "Q": [ 83 ],
+            "R": [ 3 ]
+          }
+        },
+        "state_SB_DFFESR_Q_1_D_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111000000001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 82 ],
+            "I3": [ 83 ],
+            "O": [ 103 ]
+          }
+        },
+        "state_SB_DFFESR_Q_E_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1100111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 3 ],
+            "I2": [ 82 ],
+            "I3": [ 83 ],
+            "O": [ 102 ]
           }
         }
       },
@@ -12344,7 +12492,7 @@
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "advent/day4.v:14.11-14.14"
+            "src": "advent/day5.v:19.11-19.14"
           }
         },
         "CW.CLK": {
@@ -12717,46 +12865,54 @@
           "hide_name": 0,
           "bits": [ 4, 5, 6, 7, 8 ],
           "attributes": {
-            "src": "advent/day4.v:16.17-16.21"
+            "src": "advent/day5.v:21.17-21.21"
+          }
+        },
+        "LEDS_SB_LUT4_O_1_I2": {
+          "hide_name": 0,
+          "bits": [ 84, 8 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
         "PC": {
           "hide_name": 0,
-          "bits": [ 91, 90, 88, 98, 99, 100 ],
+          "bits": [ 90, 89, 87, 104, 105, 106 ],
           "attributes": {
-            "src": "advent/day4.v:54.10-54.12",
+            "src": "advent/day5.v:58.10-58.12",
             "unused_bits": "3 4 5"
           }
         },
         "PC_SB_DFFESR_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 89 ],
+          "bits": [ 88 ],
           "attributes": {
           }
         },
         "PC_SB_DFFESR_Q_2_D": {
           "hide_name": 0,
-          "bits": [ 92 ],
+          "bits": [ 91 ],
           "attributes": {
           }
         },
         "PC_SB_DFFESR_Q_D": {
           "hide_name": 0,
-          "bits": [ 87 ],
+          "bits": [ 85 ],
           "attributes": {
           }
         },
         "PC_SB_DFFESR_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ 93 ],
+          "bits": [ 92 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
-            "src": "advent/day4.v:62.13-62.17|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
+            "src": "advent/day5.v:100.25-100.29|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v:62.5-70.4|/Users/chenxingzhou/Desktop/learn-fpga/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v:4.9-4.11"
           }
         },
         "PC_SB_DFFESR_Q_E": {
           "hide_name": 0,
-          "bits": [ 83 ],
+          "bits": [ 86 ],
           "attributes": {
           }
         },
@@ -12764,44 +12920,90 @@
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "advent/day4.v:15.11-15.16"
+            "src": "advent/day5.v:20.11-20.16"
           }
         },
         "clk": {
           "hide_name": 0,
           "bits": [ 10 ],
           "attributes": {
-            "src": "advent/day4.v:19.6-19.9"
+            "src": "advent/day5.v:24.6-24.9"
           }
         },
         "instr": {
           "hide_name": 0,
-          "bits": [ "1", "1", 86, 86, 82, 85, 84 ],
+          "bits": [ "1", "1", 97, 97, 101, 99, 95 ],
           "attributes": {
           }
         },
         "instr_SB_DFFESR_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 95 ],
+          "bits": [ 96 ],
           "attributes": {
           }
         },
         "instr_SB_DFFESR_Q_D": {
           "hide_name": 0,
-          "bits": [ 94 ],
+          "bits": [ 93 ],
           "attributes": {
           }
         },
         "instr_SB_DFFESS_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 97 ],
+          "bits": [ 100 ],
           "attributes": {
           }
         },
         "instr_SB_DFFESS_Q_D": {
           "hide_name": 0,
-          "bits": [ 96 ],
+          "bits": [ 98 ],
           "attributes": {
+          }
+        },
+        "instr_SB_DFFESS_Q_E": {
+          "hide_name": 0,
+          "bits": [ 94 ],
+          "attributes": {
+          }
+        },
+        "isSys": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "advent/day5.v:55.6-55.11"
+          }
+        },
+        "state": {
+          "hide_name": 0,
+          "bits": [ 83, 82 ],
+          "attributes": {
+            "src": "advent/day5.v:74.11-74.16"
+          }
+        },
+        "state_SB_DFFESR_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 103 ],
+          "attributes": {
+          }
+        },
+        "state_SB_DFFESR_Q_E": {
+          "hide_name": 0,
+          "bits": [ 102 ],
+          "attributes": {
+          }
+        },
+        "writeBackData": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "advent/day5.v:69.12-69.25"
+          }
+        },
+        "writeBackEn": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "advent/day5.v:68.6-68.17"
           }
         }
       }
